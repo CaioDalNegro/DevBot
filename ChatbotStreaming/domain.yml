@@ -1,0 +1,63 @@
+version: "3.1"
+
+intents:
+  - cumprimentar
+  - agradecer
+  - informar_problema
+  - negar
+  - despedir
+  - afirmar
+  - pedir_ajuda
+
+entities:
+  - problema
+
+slots:
+  problema:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: problema
+
+responses:
+  utter_cumprimentar:
+    - text: "Olá, como você vai?"
+  
+  utter_problema_Complexo:
+    - text: "Aqui está alguém para te ajudar com este problema:"
+    - text: "mauriciofalvo@gmail.com"
+  
+  utter_perguntar_problema:
+    - text: "Como posso ajudar?"
+
+  utter_recomendar_solucao:
+    - text: "Para o problema {problema}, recomendo: {solucao}"
+  
+  utter_problema_nao_listado:
+    - text: "Desculpe, não consigo te ajudar com o problema {problema}"
+
+  utter_negar:
+    - text: "Tudo bem, posso te ajudar com algo mais?"
+  
+  utter_agradecer:
+    - text: "De nada, espero ter ajudado"
+  
+  utter_despedir:
+    - text: "Até logo, se precisar estarei à disposição"
+  
+  utter_ajuda:
+    - text: "Para te ajudar, preciso saber qual é o problema"
+  
+  utter_goodbye:
+    - text: "Adeus, espero te ajudar em breve! Até logo!"
+
+  utter_iamabot:
+    - text: "Olá, sou um assistente virtual criado para te ajudar com seus problemas!"
+
+actions:
+  - action_check_problema
+  - action_recomendar_solucao
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

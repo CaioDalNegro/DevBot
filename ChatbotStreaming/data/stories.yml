@@ -1,0 +1,24 @@
+version: "3.1"
+stories:
+  - story: usuário cumprimenta o bot
+    steps:
+      - intent: cumprimentar
+      - action: utter_cumprimentar
+
+  - story: usuário pede ajuda
+    steps:
+      - intent: pedir_ajuda
+      - action: utter_ajuda
+
+  - story: usuário informa problema
+    steps:
+      - intent: informar_problema
+      - action: action_check_problema
+      - action: action_recomendar_solucao
+
+  - story: usuário agradece e despede
+    steps:
+      - intent: agradecer
+      - action: utter_agradecer
+      - intent: despedir
+      - action: utter_despedir
