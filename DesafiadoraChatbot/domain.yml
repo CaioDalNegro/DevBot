@@ -1,0 +1,43 @@
+version: "3.1"
+
+intents:
+  - buscar_livro_titulo
+  - buscar_livro_autor
+  - buscar_livro_assunto
+
+entities:
+  - titulo_livro
+  - nome_autor
+  - assunto_livro
+
+slots:
+  titulo_livro:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: titulo_livro
+
+  nome_autor:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: nome_autor
+
+  assunto_livro:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: assunto_livro
+
+actions:
+  - action_buscar_livro_titulo
+  - action_buscar_livro_autor
+  - action_buscar_livro_assunto
+
+responses:
+  utter_goodbye:
+    - text: "Até mais! Se precisar de ajuda com livros, é só chamar."
+  utter_default:
+    - text: "Desculpe, não entendi! Poderia reformular?"
+  utter_iamabot:
+    - text: "Eu sou um bot, aqui para te ajudar com informações sobre livros!"

@@ -1,0 +1,25 @@
+version: "3.1"
+
+nlu:
+# Busca o livro pelo título-------------------
+- intent: buscar_livro_titulo
+  examples: |
+    - Quero saber sobre o livro [Dom Casmurro](titulo_livro)
+    - Me fale sobre o livro [O Senhor dos Anéis](titulo_livro)
+    - Você conhece o livro [1984](titulo_livro)?
+
+# Busca o livro pelo autor-------------------
+- intent: buscar_livro_autor
+  examples: |
+    - Quero livros do autor [George Orwell](nome_autor)
+    - Me mostre livros de [J.K. Rowling](nome_autor)
+    - Tem algum livro de [Stephen King](nome_autor)?
+    - Quais livros do [Machado de Assis](nome_autor) você conhece?
+
+
+# Busca o livro pelo assunto-------------------
+- intent: buscar_livro_assunto
+  examples: |
+    - Quero livros sobre [ficção científica](assunto_livro)
+    - Me indique livros sobre [história brasileira](assunto_livro)
+    - Tem algo sobre [aventura](assunto_livro)?
