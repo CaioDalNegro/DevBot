@@ -1,9 +1,12 @@
 version: "3.1"
 
 intents:
+  - saudacao
   - buscar_livro_titulo
   - buscar_livro_autor
   - buscar_livro_assunto
+  - despedida
+  - fallback  # Adicionando a intenção 'fallback'
 
 entities:
   - titulo_livro
@@ -29,15 +32,44 @@ slots:
       - type: from_entity
         entity: assunto_livro
 
+responses:
+  utter_saudacao:
+    - text: "Olá! Como posso te ajudar hoje?"
+    - text: "Oi! Em que posso te ajudar?"
+    - text: "E aí! O que posso fazer por você?"
+  
+  utter_oferecer_ajuda:
+    - text: "Posso te ajudar a encontrar outro livro, caso queira."
+    - text: "Gostaria de procurar mais livros? Posso ajudar!"
+    - text: "Quer buscar mais livros ou informações? Estou à disposição!"
+
+  utter_deseja_outro_livro:
+    - text: "Você gostaria de procurar outro livro?"
+    - text: "Posso te ajudar a encontrar outro livro, caso queira."
+    - text: "Gostaria de buscar mais livros? Posso te ajudar!"
+
+  utter_despedida:
+    - text: "Até mais! Se precisar de ajuda com livros, é só chamar."
+
+  utter_iamabot:
+    - text: "Eu sou um bot, aqui para te ajudar com informações sobre livros!"
+
+  utter_foi_bom_conversar:
+    - text: "Foi ótimo conversar com você! Até a próxima!"
+
+  utter_nao_entendi:
+    - text: "Desculpe, não entendi o que você quis dizer. Pode reformular a sua pergunta?"
+
+  utter_nao_entendi_dica:
+    - text: "Não consegui entender. Tente ser mais específico ou pergunte sobre livros ou autores."
+
 actions:
   - action_buscar_livro_titulo
   - action_buscar_livro_autor
   - action_buscar_livro_assunto
-
-responses:
-  utter_goodbye:
-    - text: "Até mais! Se precisar de ajuda com livros, é só chamar."
-  utter_default:
-    - text: "Desculpe, não entendi! Poderia reformular?"
-  utter_iamabot:
-    - text: "Eu sou um bot, aqui para te ajudar com informações sobre livros!"
+  - utter_deseja_outro_livro
+  - utter_oferecer_ajuda
+  - utter_nao_entendi
+  - utter_foi_bom_conversar
+  - utter_iamabot
+  - utter_despedida

@@ -1,0 +1,43 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_titulo\"}}]": "action_buscar_livro_titulo",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_titulo\"}}, {\"prev_action\": {\"action_name\": \"action_buscar_livro_titulo\"}, \"user\": {\"intent\": \"buscar_livro_titulo\"}}]": "utter_deseja_outro_livro",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_titulo\"}}, {\"prev_action\": {\"action_name\": \"action_buscar_livro_titulo\"}, \"user\": {\"intent\": \"buscar_livro_titulo\"}}, {\"prev_action\": {\"action_name\": \"utter_deseja_outro_livro\"}, \"user\": {\"intent\": \"buscar_livro_titulo\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_assunto\"}}]": "action_buscar_livro_assunto",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_assunto\"}}, {\"prev_action\": {\"action_name\": \"action_buscar_livro_assunto\"}, \"user\": {\"intent\": \"buscar_livro_assunto\"}}]": "utter_deseja_outro_livro",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_assunto\"}}, {\"prev_action\": {\"action_name\": \"action_buscar_livro_assunto\"}, \"user\": {\"intent\": \"buscar_livro_assunto\"}}, {\"prev_action\": {\"action_name\": \"utter_deseja_outro_livro\"}, \"user\": {\"intent\": \"buscar_livro_assunto\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}]": "utter_despedida",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_despedida\"}, \"user\": {\"intent\": \"despedida\"}}]": "utter_foi_bom_conversar",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_despedida\"}, \"user\": {\"intent\": \"despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_foi_bom_conversar\"}, \"user\": {\"intent\": \"despedida\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}]": "utter_saudacao",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}]": "utter_oferecer_ajuda",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_oferecer_ajuda\"}, \"user\": {\"intent\": \"saudacao\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fallback\"}}]": "utter_nao_entendi",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_nao_entendi\"}, \"user\": {\"intent\": \"fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_autor\"}}]": "action_buscar_livro_autor",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_autor\"}}, {\"prev_action\": {\"action_name\": \"action_buscar_livro_autor\"}, \"user\": {\"intent\": \"buscar_livro_autor\"}}]": "utter_deseja_outro_livro",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"buscar_livro_autor\"}}, {\"prev_action\": {\"action_name\": \"action_buscar_livro_autor\"}, \"user\": {\"intent\": \"buscar_livro_autor\"}}, {\"prev_action\": {\"action_name\": \"utter_deseja_outro_livro\"}, \"user\": {\"intent\": \"buscar_livro_autor\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_despedida\"}, \"user\": {\"intent\": \"despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_foi_bom_conversar\"}, \"user\": {\"intent\": \"despedida\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"despedida\"}}, {\"prev_action\": {\"action_name\": \"utter_despedida\"}, \"user\": {\"intent\": \"despedida\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_oferecer_ajuda\"}, \"user\": {\"intent\": \"saudacao\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_nao_entendi\"}, \"user\": {\"intent\": \"fallback\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"fallback\"}}]"
+    ]
+  }
+}

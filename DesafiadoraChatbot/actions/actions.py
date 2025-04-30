@@ -74,4 +74,3 @@ class ActionBuscarLivroAssunto(Action):
 
         dispatcher.utter_message(text=mensagem)
         return []
-

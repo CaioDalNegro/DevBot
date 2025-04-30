@@ -1,20 +1,34 @@
 version: "3.1"
 
 stories:
-# Fluxo de conversa para buscar livro pelo título-------------------
-- story: Buscar livro por título
-  steps:
-    - intent: buscar_livro_titulo
-    - action: action_buscar_livro_titulo
+  # Fluxo de conversa para saudação
+  - story: Saudação
+    steps:
+      - intent: saudacao
+      - action: utter_saudacao
+      - action: utter_oferecer_ajuda
+      - action: action_listen  # Agora aguarda pela interação do usuário
 
-# Fluxo de conversa para buscar livro por autor---------------------
-- story: Buscar livro por autor
-  steps:
-    - intent: buscar_livro_autor
-    - action: action_buscar_livro_autor
+  # Fluxo de conversa para buscar livro pelo título
+  - story: Buscar livro por título
+    steps:
+      - intent: buscar_livro_titulo
+      - action: action_buscar_livro_titulo
+      - action: utter_deseja_outro_livro
+      - action: action_listen
 
-# Fluxo de conversa para buscar livro por assunto-------------------
-- story: Buscar livro por assunto
-  steps:
-    - intent: buscar_livro_assunto
-    - action: action_buscar_livro_assunto
+  # Fluxo de conversa para buscar livro por autor
+  - story: Buscar livro por autor
+    steps:
+      - intent: buscar_livro_autor
+      - action: action_buscar_livro_autor
+      - action: utter_deseja_outro_livro
+      - action: action_listen
+
+  # Fluxo de conversa para buscar livro por assunto
+  - story: Buscar livro por assunto
+    steps:
+      - intent: buscar_livro_assunto
+      - action: action_buscar_livro_assunto
+      - action: utter_deseja_outro_livro
+      - action: action_listen

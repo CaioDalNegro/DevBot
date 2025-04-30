@@ -1,32 +1,55 @@
 version: "3.1"
 
 rules:
+  # 1. Informar que sou um assistente virtual
+  - rule: Informar que sou um assistente virtual
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
 
-# Despedida
-- rule: Despedida do usuário
-  steps:
-    - intent: goodbye
-    - action: utter_goodbye
+  # 2. Saudação do usuário
+  - rule: Saudação do usuário
+    steps:
+      - intent: saudacao
+      - action: utter_saudacao
+      - action: utter_oferecer_ajuda  # Oferece ajuda após saudação
+      - action: action_listen  # Aguarda a próxima ação do usuário
 
-- rule: Informar que sou um assistente virtual
-  steps:
-    - intent: bot_challenge
-    - action: utter_iamabot
+  # 3. Buscar um livro pelo título
+  - rule: Buscar livro pelo título
+    steps:
+      - intent: buscar_livro_titulo
+      - action: action_buscar_livro_titulo
+      - action: utter_deseja_outro_livro
+      - action: action_listen  # Aguarda a próxima ação do usuário
 
-# Buscar um livro pelo título
-- rule: Buscar livro pelo título
-  steps:
-    - intent: buscar_livro_titulo
-    - action: action_buscar_livro_titulo
+  # 4. Buscar livro por autor
+  - rule: Buscar livro por autor
+    steps:
+      - intent: buscar_livro_autor
+      - action: action_buscar_livro_autor
+      - action: utter_deseja_outro_livro
+      - action: action_listen
 
-# Buscar livro por autor
-- rule: Buscar livro por autor
-  steps:
-    - intent: buscar_livro_autor
-    - action: action_buscar_livro_autor
+  # 5. Buscar livro por assunto
+  - rule: Buscar livro por assunto
+    steps:
+      - intent: buscar_livro_assunto
+      - action: action_buscar_livro_assunto
+      - action: utter_deseja_outro_livro
+      - action: action_listen
 
-# Buscar livro por assunto
-- rule: Buscar livro por assunto
-  steps:
-    - intent: buscar_livro_assunto
-    - action: action_buscar_livro_assunto
+  # 6. Despedida do usuário
+  - rule: Despedida do usuário
+    steps:
+      - intent: despedida
+      - action: utter_despedida
+      - action: utter_foi_bom_conversar
+      - action: action_listen
+
+  # 7. Quando o usuário não entende ou a intenção não é clara (fallback)
+  - rule: Intenção não identificada
+    steps:
+      - intent: fallback
+      - action: utter_nao_entendi
+      - action: action_listen  # Aguarda uma nova interação

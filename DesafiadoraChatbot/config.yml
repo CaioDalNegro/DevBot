@@ -6,32 +6,43 @@ assistant_id: caio_chatbot
 # Define o idioma que o chatbot
 language: pt
 
-# Pipeline de processamento de linguagem natural
-pipeline:
-  - name: WhitespaceTokenizer           # Tokeniza o texto separando por espaços
-  - name: RegexFeaturizer               # Extrai padrões
-  - name: LexicalSyntacticFeaturizer    # Extrai letras maiúsculas
-  - name: CountVectorsFeaturizer        # Converte texto
-  - name: CountVectorsFeaturizer        # Converte sub-palavras para melhorar compreensão
+# # Pipeline de processamento de linguagem natural
+# pipeline:
+#   - name: WhitespaceTokenizer              # Tokeniza o texto separando por espaços
+#   - name: RegexFeaturizer                  # Extrai padrões
+#   - name: DIETClassifier
+#     epochs: 50
     
-    analyzer: char_wb
-    min_ngram: 1
-    max_ngram: 4
+ # Pipeline de processamento de linguagem natural
+pipeline:
+   - name: WhitespaceTokenizer           # Tokeniza o texto separando por espaços
+   - name: RegexFeaturizer               # Extrai padrões
+   - name: LexicalSyntacticFeaturizer    # Extrai letras maiúsculas
+   - name: CountVectorsFeaturizer        # Converte texto
+   - name: CountVectorsFeaturizer        # Converte sub-palavras para melhorar compreensão
+     analyzer: char_wb
+     min_ngram: 1
+     max_ngram: 4
 
-  - name: DIETClassifier                # Classificador DIET que entende intenções e entidades ao mesmo tempo
-    epochs: 100
-  
-  - name: EntitySynonymMapper           # Normaliza palavras com o mesmo significado
-  - name: ResponseSelector              # Respostas automáticas
-    epochs: 100
-  
-  - name: FallbackClassifier            # Define quando não entendeu a intenção
-    threshold: 0.3
-    ambiguity_threshold: 0.1
+   - name: DIETClassifier                # Classificador DIET que entende intenções e entidades ao mesmo tempo
+     epochs: 100
+     constrain_similarities: true
+   - name: EntitySynonymMapper           # Normaliza palavras com o mesmo significado
+   - name: ResponseSelector              # Respostas automáticas
+     epochs: 100
+     constrain_similarities: true
+   - name: FallbackClassifier            # Define quando não entendeu a intenção
+     threshold: 0.3
+     ambiguity_threshold: 0.1
 
 policies:
-  - name: MemoizationPolicy
-  - name: TEDPolicy
-    max_history: 5
-    epochs: 100
-  - name: RulePolicy
+   - name: MemoizationPolicy
+   - name: RulePolicy
+   - name: UnexpecTEDIntentPolicy
+     max_history: 5
+     epochs: 100
+   - name: TEDPolicy
+     max_history: 5
+     epochs: 100
+     constrain_similarities: true
+

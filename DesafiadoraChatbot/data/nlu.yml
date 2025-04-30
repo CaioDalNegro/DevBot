@@ -1,25 +1,173 @@
 version: "3.1"
 
 nlu:
-# Busca o livro pelo título-------------------
-- intent: buscar_livro_titulo
-  examples: |
-    - Quero saber sobre o livro [Dom Casmurro](titulo_livro)
-    - Me fale sobre o livro [O Senhor dos Anéis](titulo_livro)
-    - Você conhece o livro [1984](titulo_livro)?
+  # Saudação do bot
+  - intent: saudacao
+    examples: |
+      - Olá
+      - Oi
+      - E aí
+      - Como vai?
+      - Bom dia
+      - Boa tarde
+      - Boa noite
+      - Tudo bem?
+      - Como você está?
+      - Fala aí
+      - E aí, tudo bem?
+      - Oi, tudo certo?
+      - Olá, como está?
+      - Oi, tudo bem com você?
+      - Como você está hoje?
+      - Olá, tudo ótimo por aí?
+      - Como foi seu dia?
+      - Boa noite, tudo bem?
+      - Oi, como vai a vida?
+      - Olá, meu caro!
+      - Como vai a jornada hoje?
+      - E aí, tranquilo?
+      - Bom dia, tudo bom?
+      - Oi, tudo ótimo!
+      - Como você anda?
+      - Fala, beleza?
+      - Oi, tudo de boa?
+      - Olá, como você está se sentindo?
 
-# Busca o livro pelo autor-------------------
-- intent: buscar_livro_autor
-  examples: |
-    - Quero livros do autor [George Orwell](nome_autor)
-    - Me mostre livros de [J.K. Rowling](nome_autor)
-    - Tem algum livro de [Stephen King](nome_autor)?
-    - Quais livros do [Machado de Assis](nome_autor) você conhece?
+  # Busca o livro pelo título
+  - intent: buscar_livro_titulo
+    examples: |
+      - Quero saber sobre o livro [Jurassic Park](titulo_livro)
+      - Me fale sobre o livro [O Senhor dos Anéis](titulo_livro)
+      - Você conhece o livro [1984](titulo_livro)?
+      - Fala mais sobre o livro [Dom Quixote](titulo_livro)
+      - Me conte sobre o livro [Harry Potter e a Pedra Filosofal](titulo_livro)
+      - Quais são os detalhes do livro [O Hobbit](titulo_livro)?
+      - Eu quero saber sobre o livro [A Guerra dos Tronos](titulo_livro)
+      - O que você sabe sobre [O Código Da Vinci](titulo_livro)?
+      - Me fale sobre o livro [O Caçador de Pipas](titulo_livro)
+      - Como é o livro [O Sol é Para Todos](titulo_livro)?
+      - Quero saber mais sobre o livro [Percy Jackson](titulo_livro)
+      - Você conhece o livro [A Revolução dos Bichos](titulo_livro)?
+      - Me fale sobre [O Nome do Vento](titulo_livro)
+      - O que você pode me dizer sobre [A Menina que Roubava Livros](titulo_livro)?
+      - Como é a história do livro [O Pequeno Príncipe](titulo_livro)?
+      - Fale-me mais sobre o livro [O Morro dos Ventos Uivantes](titulo_livro)
+      - Eu quero saber sobre [O Iluminado](titulo_livro)
+      - O que você sabe sobre [O Senhor das Moscas](titulo_livro)?
+      - Conte-me sobre o livro [Admirável Mundo Novo](titulo_livro)
+      - Me fale sobre [O Lado Bom da Vida](titulo_livro)
+      - Você pode me contar sobre [Matar a Saudade](titulo_livro)?
+      - Fale mais sobre [O Guia do Mochileiro das Galáxias](titulo_livro)
+      - Me dê mais detalhes sobre o livro [A Caverna](titulo_livro)
+      - Quero saber tudo sobre [A Sombra do Vento](titulo_livro)
+      - O que você sabe do livro [O Vendedor de Sonhos](titulo_livro)?
+      - Me conte a história de [O Último dos Moicanos](titulo_livro)
+      - Me fale sobre [O Retrato de Dorian Gray](titulo_livro)
+      - Quero saber do livro [1984](titulo_livro)
+      - Fala mais sobre [A Esperança](titulo_livro)
+      - O que é [Cem Anos de Solidão](titulo_livro)?
 
+  # Busca o livro pelo autor
+  - intent: buscar_livro_autor
+    examples: |
+      - Quero livros do autor [George Orwell](nome_autor)
+      - Me mostre livros de [J.K. Rowling](nome_autor)
+      - Me mostre livros de [Lynn Painter](nome_autor)
+      - Tem algum livro de [Colleen Hoover](nome_autor)?
+      - Quais livros do [Michael Crichton](nome_autor) você conhece?
+      - Tem livros do autor [Gabriel García Márquez](nome_autor)?
+      - Quais livros escreveu [Agatha Christie](nome_autor)?
+      - Eu quero livros do [Haruki Murakami](nome_autor)
+      - Mostre-me livros de [Ernest Hemingway](nome_autor)
+      - Quais livros de [Jane Austen](nome_autor) você conhece?
+      - Fale sobre os livros de [Dan Brown](nome_autor)
+      - Me mostre os livros de [Shakespeare](nome_autor)
+      - Quais são os livros mais famosos de [Stephen King](nome_autor)?
+      - Quais livros de [George R.R. Martin](nome_autor) você conhece?
+      - Quais livros [Machado de Assis](nome_autor) escreveu?
+      - Me diga sobre os livros de [Virginia Woolf](nome_autor)
+      - Você conhece os livros de [F. Scott Fitzgerald](nome_autor)?
+      - Quais são os principais livros de [Mark Twain](nome_autor)?
+      - Fale-me sobre os livros de [Paulo Coelho](nome_autor)
+      - Quais são os livros de [Chimamanda Ngozi Adichie](nome_autor)?
+      - Me fale sobre as obras de [Franz Kafka](nome_autor)
+      - Quais livros de [Isaac Asimov](nome_autor) são populares?
+      - Você pode me recomendar livros de [Harlan Coben](nome_autor)?
+      - Me fale sobre os livros de [Harper Lee](nome_autor)
+      - Tem livros do [Neil Gaiman](nome_autor)?
+      - Quais livros [Agatha Christie](nome_autor) escreveu?
+      - Tem livros de [Léo Buscaglia](nome_autor)?
+      - Me mostre livros de [Clarice Lispector](nome_autor)
+      - Me fale sobre os livros de [L.M. Montgomery](nome_autor)
+      - Quais livros de [Ken Follett](nome_autor) são bons?
+      - Quais livros de [Douglas Adams](nome_autor) você conhece?
+      - Você conhece os livros de [Leo Tolstoy](nome_autor)?
+      - Quais livros de [Simone de Beauvoir](nome_autor) são populares?
 
-# Busca o livro pelo assunto-------------------
-- intent: buscar_livro_assunto
-  examples: |
-    - Quero livros sobre [ficção científica](assunto_livro)
-    - Me indique livros sobre [história brasileira](assunto_livro)
-    - Tem algo sobre [aventura](assunto_livro)?
+  # Busca o livro pelo assunto
+  - intent: buscar_livro_assunto
+    examples: |
+      - Quero livros sobre [ficção científica](assunto_livro)
+      - Me indique livros sobre [romance](assunto_livro)
+      - Tem algo sobre [aventura](assunto_livro)?
+      - Estou procurando livros sobre [mistério](assunto_livro)
+      - Pode me sugerir livros de [fantasia](assunto_livro)?
+      - Quais livros sobre [terror](assunto_livro) você conhece?
+      - Eu gosto de livros de [drama](assunto_livro), pode me ajudar?
+      - Indica livros sobre [história](assunto_livro) para mim
+      - Quero algo sobre [biografia](assunto_livro)
+      - Me mostre livros de [autoajuda](assunto_livro)
+      - Você tem livros de [ficção histórica](assunto_livro)?
+      - Me fale sobre livros de [ficção contemporânea](assunto_livro)
+      - Estou buscando livros sobre [comédia](assunto_livro)
+      - Quais livros de [adaptação de filme](assunto_livro) você conhece?
+      - Tem livros sobre [religião](assunto_livro)?
+      - Me indique livros sobre [arte](assunto_livro)
+      - Tenho interesse em livros de [política](assunto_livro)
+      - Quais livros sobre [filosofia](assunto_livro) são interessantes?
+      - Me fale sobre livros de [poesia](assunto_livro)
+      - Estou buscando livros sobre [viagens](assunto_livro)
+      - Pode sugerir livros sobre [arquitetura](assunto_livro)?
+      - Me mostre livros de [história militar](assunto_livro)
+      - Tem algo sobre [meditação](assunto_livro)?
+      - Quero livros sobre [crimes reais](assunto_livro)
+      - Mostre livros sobre [psicologia](assunto_livro)
+      - Me fale sobre livros de [economia](assunto_livro)
+      - Indique livros sobre [espiritualidade](assunto_livro)
+      - Quais livros de [guerra](assunto_livro) você tem?
+      - Estou procurando livros de [cultura japonesa](assunto_livro)
+      - Quais livros de [suspense psicológico](assunto_livro) você tem?
+      - Me fale sobre livros de [educação](assunto_livro)
+      - Você tem livros sobre [tecnologia](assunto_livro)?
+
+  # Despedida do bot
+  - intent: despedida
+    examples: |
+      - Tchau
+      - Até mais
+      - Valeu
+      - Até logo
+      - Até mais tarde
+      - Falou
+      - Nos vemos
+      - Adeus
+      - Até a próxima
+      - Foi bom conversar com você
+      - Tchau, até logo
+      - Até breve
+      - Foi ótimo falar com você
+      - Nos vemos depois
+      - Fique bem
+      - Tenha um bom dia
+      - Boa sorte, tchau
+      - Até amanhã
+      - Até logo, até a próxima
+      - Tchauzinho
+      - Até o próximo papo
+      - Falou, até logo
+      - Adeus, cuide-se
+      - Tchau, até já
+      - Até mais, se cuida
+      - Te vejo em breve
+      - Fui, até mais
+      - Despedindo, até logo
