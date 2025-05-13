@@ -13,27 +13,60 @@ language: pt
 #   - name: DIETClassifier
 #     epochs: 50
     
- # Pipeline de processamento de linguagem natural
+# Pipeline de processamento de linguagem natural
 pipeline:
-   - name: WhitespaceTokenizer           # Tokeniza o texto separando por espaços
-   - name: RegexFeaturizer               # Extrai padrões
-   - name: LexicalSyntacticFeaturizer    # Extrai letras maiúsculas
-   - name: CountVectorsFeaturizer        # Converte texto
-   - name: CountVectorsFeaturizer        # Converte sub-palavras para melhorar compreensão
-     analyzer: char_wb
-     min_ngram: 1
-     max_ngram: 4
+    - name: WhitespaceTokenizer           # Tokeniza o texto separando por espaços
+    - name: RegexFeaturizer               # Extrai padrões
+    - name: LexicalSyntacticFeaturizer    # Extrai letras maiúsculas
+    - name: CountVectorsFeaturizer        # Converte texto
+    - name: CountVectorsFeaturizer        # Converte sub-palavras para melhorar compreensão
+      analyzer: char_wb
+      min_ngram: 1
+      max_ngram: 4
 
-   - name: DIETClassifier                # Classificador DIET que entende intenções e entidades ao mesmo tempo
-     epochs: 100
-     constrain_similarities: true
-   - name: EntitySynonymMapper           # Normaliza palavras com o mesmo significado
-   - name: ResponseSelector              # Respostas automáticas
-     epochs: 100
-     constrain_similarities: true
-   - name: FallbackClassifier            # Define quando não entendeu a intenção
-     threshold: 0.3
-     ambiguity_threshold: 0.1
+    - name: DIETClassifier                # Classificador DIET que entende intenções e entidades ao mesmo tempo
+      epochs: 100
+      constrain_similarities: true
+    - name: EntitySynonymMapper           # Normaliza palavras com o mesmo significado
+    - name: ResponseSelector              # Respostas automáticas
+      epochs: 100
+      constrain_similarities: true
+    - name: FallbackClassifier            # Define quando não entendeu a intenção
+      threshold: 0.3
+      ambiguity_threshold: 0.1
+
+# pipeline:
+#    - name: WhitespaceTokenizer          # Separa a frase em palavras com base nos espaços em branco
+#    - name: CountVectorsFeaturizer       # Converte as palavras em vetores numéricos (bag of words)
+#    - name: DIETClassifier               # Classifica a intenção da mensagem e extrai entidades, se houver
+#      epochs: 50                         # Número de ciclos de treinamento para o modelo
+
+# pipeline:
+#     - name: WhitespaceTokenizer              # Divide a entrada em palavras
+#     - name: RegexFeaturizer                  # Detecta padrões regulares definidos nos dados de treinamento
+#     - name: LexicalSyntacticFeaturizer       # Adiciona informações como: é uma letra maiúscula? É um número?
+#     - name: CountVectorsFeaturizer           # Vetoriza palavras usando frequência no texto
+#     - name: CountVectorsFeaturizer           # Segunda vetorização com análise de subpalavras
+#       analyzer: char_wb
+#       min_ngram: 1
+#       max_ngram: 4
+#     - name: DIETClassifier                   # Classificador multitarefa: intenções + entidades
+#       epochs: 100
+#       constrain_similarities: true          # Ajuda a evitar confusão entre intenções parecidas
+#     - name: EntitySynonymMapper              # Mapeia sinônimos para uma forma padrão (ex: "autor" e "escritor")
+
+# pipeline:
+#    - name: WhitespaceTokenizer
+#    - name: RegexFeaturizer
+#    - name: CountVectorsFeaturizer
+#    - name: DIETClassifier
+#      epochs: 100
+#    - name: EntitySynonymMapper
+#    - name: ResponseSelector                 # Responsável por escolher a melhor resposta para perguntas (FAQs)
+#      epochs: 100
+#      constrain_similarities: true
+
+
 
 policies:
    - name: MemoizationPolicy

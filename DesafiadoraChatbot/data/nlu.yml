@@ -32,6 +32,83 @@ nlu:
       - Fala, beleza?
       - Oi, tudo de boa?
       - Olá, como você está se sentindo?
+      - Como você tem estado?
+      - E aí, como vai a vida?
+      - Olá, como você está hoje?
+      - Oi, tudo bem por aí?
+      - Como você está, meu amigo?
+      - Olá, o que você tem feito?
+      - Como você está se sentindo hoje?
+      - Oi, que bom te ver por aqui!
+      - Como você está vivendo por aí?
+      - E aí, como está o dia de hoje?
+      - Como você está se saindo?
+      - Olá, tem novidades boas?
+      - Oi, o que há de novo?
+      - Como você está, parceiro?
+      - Fala, tudo tranquilo por aí?
+      - Como andam as coisas por aí?
+      - Oi, tudo em paz?
+      - Olá, está tudo certo por aqui também.
+      - Como anda o seu dia?
+      - Oi, já almoçou?
+      - Como vai sua vida?
+      - Oi, como está a semana?
+      - Olá, o que tem de bom?
+      - Como está a situação por aí?
+      - Olá, tudo ok?
+      - Como anda a vida?
+      - Olá, como estão as coisas por aqui?
+      - E aí, tudo firme?
+      - Como está o clima por aí?
+      - Oi, tudo tranquilo?
+      - Olá, você está bem hoje?
+      - Como vai a vida hoje?
+      - Olá, qual é a boa de hoje?
+      - Oi, como você está se sentindo hoje?
+      - Como está sua energia hoje?
+      - Olá, espero que o dia tenha sido bom!
+      - Como foi seu final de semana?
+      - Oi, como anda a vida por aí?
+      - Como foi o seu dia até agora?
+      - E aí, já tomou café?
+      - Como você está se saindo com os seus projetos?
+      - Oi, tudo ótimo por aqui!
+      - Como você tem estado nos últimos dias?
+      - Fala, como está o trabalho?
+      - Oi, tudo na paz?
+      - Como foi sua noite?
+      - E aí, como foi a semana?
+      - Olá, tudo tranquilo?
+      - Como vai sua jornada até aqui?
+      - Olá, de boas por aí?
+      - Como você está se sentindo fisicamente?
+      - Oi, como você está espiritualmente hoje?
+      - Como foi o seu fim de semana?
+      - Olá, tudo ótimo!
+      - Como anda o ânimo por aí?
+      - Fala, como vai tudo?
+      - Oi, como foi o seu feriado?
+      - Como você se sente agora?
+      - Oi, o que tem de bom para hoje?
+      - Como foi a noite passada para você?
+      - Oi, como vai seu dia hoje?
+      - Olá, o que você tem de novo por aí?
+      - Como anda sua vida profissional?
+      - Oi, tudo certo com você?
+      - Como está o andamento dos seus planos?
+      - Olá, está tudo tranquilo?
+      - Oi, tudo bem contigo?
+      - E aí, como vai o trabalho?
+      - Oi, como você tem se saído com seus objetivos?
+      - Como você está se sentindo mentalmente?
+      - Olá, como está a energia de hoje?
+      - Fala, tudo certo por aí?
+      - Como está o clima por aí hoje?
+      - Olá, como você está emocionalmente?
+      - Oi, como você se sente depois do trabalho?
+      - Como foi seu dia até agora?
+      - Oi, como anda o relacionamento com os outros?
 
   # Busca o livro pelo título
   - intent: buscar_livro_titulo
@@ -66,6 +143,45 @@ nlu:
       - Quero saber do livro [1984](titulo_livro)
       - Fala mais sobre [A Esperança](titulo_livro)
       - O que é [Cem Anos de Solidão](titulo_livro)?
+      - Me fale tudo sobre o livro [O Cemitério](titulo_livro)
+      - O que você sabe do livro [O Caçador de Almas](titulo_livro)?
+      - Me fale sobre [A Casa de Papel](titulo_livro)
+      - Quero saber mais sobre [Moby Dick](titulo_livro)
+      - Fale mais sobre [As Crônicas de Nárnia](titulo_livro)
+      - O que você pode me contar sobre [O Iluminado](titulo_livro)?
+      - Me conte mais sobre [O Código Da Vinci](titulo_livro)
+      - Fale sobre o livro [A Mulher na Janela](titulo_livro)
+      - O que é [A Culpa é das Estrelas](titulo_livro)?
+      - Me fale sobre [O Alquimista](titulo_livro)
+      - O que você sabe sobre [O Lado Sombrio da Lua](titulo_livro)?
+      - Quero saber mais sobre [O Mar de Monstros](titulo_livro)
+      - Fale sobre o livro [A Menina que Roubava Livros](titulo_livro)
+      - Me diga sobre [O Homem de Giz](titulo_livro)
+      - Como é o livro [O País das Sombras](titulo_livro)?
+      - Me conte tudo sobre [A Culpa é das Estrelas](titulo_livro)
+      - O que você sabe sobre [O Estranho Mundo de Jack](titulo_livro)?
+      - Quero saber sobre [O Coração da Terra](titulo_livro)
+      - Me fale sobre [O Código do Apocalipse](titulo_livro)
+      - Como é o livro [O Último dos Moicanos](titulo_livro)?
+      - O que você pode me dizer sobre [A Ilha do Tesouro](titulo_livro)?
+      - Fale-me mais sobre [O Gênio e o Poeta](titulo_livro)
+      - Quais detalhes sobre o livro [A Peste](titulo_livro)?
+      - Me conte sobre o livro [O Paciente Silencioso](titulo_livro)
+      - Você pode me falar sobre [A Lógica do Cisne Negro](titulo_livro)?
+      - Me fale sobre [O Pai da Ciência](titulo_livro)
+      - Quero saber mais sobre [Os Miseráveis](titulo_livro)
+      - O que você sabe sobre [O Grande Gatsby](titulo_livro)?
+      - Fale mais sobre o livro [As Aventuras de Sherlock Holmes](titulo_livro)
+      - Me conte sobre [A Menina que Roubava Livros](titulo_livro)
+      - Fale sobre o livro [A Rebelde do Deserto](titulo_livro)
+      - Me diga sobre [O Tesouro da Ilha](titulo_livro)
+      - Quero saber tudo sobre [O Pequeno Príncipe](titulo_livro)
+      - Me fale sobre [O Jogo do Anjo](titulo_livro)
+      - O que você sabe sobre [O Poder do Hábito](titulo_livro)?
+      - Como é a história do livro [O Mundo de Sofia](titulo_livro)?
+      - Fale mais sobre [O Mestre e Margarita](titulo_livro)
+      - Me conte sobre [O Bazar dos Sonhos Ruins](titulo_livro)
+      - Você conhece o livro [A Vida Invisível de Addie LaRue](titulo_livro)?
 
   # Busca o livro pelo autor
   - intent: buscar_livro_autor
@@ -103,8 +219,68 @@ nlu:
       - Quais livros de [Douglas Adams](nome_autor) você conhece?
       - Você conhece os livros de [Leo Tolstoy](nome_autor)?
       - Quais livros de [Simone de Beauvoir](nome_autor) são populares?
+      - Quais livros de [Gustave Flaubert](nome_autor) você conhece?
+      - Me fale sobre os livros de [Dostoiévski](nome_autor)
+      - Quais livros de [Camus](nome_autor) você conhece?
+      - Você conhece os livros de [Érico Veríssimo](nome_autor)?
+      - Me conte sobre os livros de [Zadie Smith](nome_autor)
+      - Me fale sobre [Ruth Ware](nome_autor)
+      - O que você sabe sobre [Tolkien](nome_autor)?
+      - Quais livros de [Richard Dawkins](nome_autor) são interessantes?
+      - Mostre livros de [Luca De Santis](nome_autor)
+      - Me fale sobre os livros de [Marcel Proust](nome_autor)
+      - O que você sabe sobre [Albert Camus](nome_autor)?
+      - Você conhece livros de [Mario Vargas Llosa](nome_autor)?
+      - Quais livros de [Thomas Mann](nome_autor) você conhece?
+      - Quais livros de [Francesca Serritella](nome_autor)?
+      - Quais livros de [Barbara Kingsolver](nome_autor)?
+      - Me fale sobre [William Faulkner](nome_autor)
+      - Me diga sobre [Jorge Luis Borges](nome_autor)
+      - Mostre-me livros de [Don DeLillo](nome_autor)
+      - Quais livros de [Joan Didion](nome_autor) você recomenda?
+      - Fale sobre os livros de [Khaled Hosseini](nome_autor)
+      - Me fale sobre os livros de [Margaret Atwood](nome_autor)
+      - O que você sabe sobre [Mark Haddon](nome_autor)?
+      - Me fale sobre [Stephen Chbosky](nome_autor)
+      - Quais livros de [Maya Angelou](nome_autor) são interessantes?
+      - Tem livros de [Jodi Picoult](nome_autor)?
+      - O que você sabe sobre [Danielle Steel](nome_autor)?
+      - Me conte sobre [Tommy Orange](nome_autor)
+      - Você conhece [Helen Fielding](nome_autor)?
+      - Quais livros de [John Grisham](nome_autor) são populares?
+      - Tem livros de [C.S. Lewis](nome_autor)?
+      - Me fale sobre [Sylvia Plath](nome_autor)
+      - Quais livros de [Oscar Wilde](nome_autor) você conhece?
+      - Quais livros de [Dante Alighieri](nome_autor) são populares?
+      - Me mostre livros de [Sophie Kinsella](nome_autor)
+      - Quero saber mais sobre os livros de [Jean-Paul Sartre](nome_autor)
+      - Quais livros de [J.R.R. Tolkien](nome_autor) você tem?
+      - Me fale sobre os livros de [David Foster Wallace](nome_autor)
+      - O que você sabe sobre [Agatha Christie](nome_autor)?
+      - Quais livros de [Virginia Woolf](nome_autor) são interessantes?
+      - Me fale sobre os livros de [Neil Gaiman](nome_autor)
+      - Quais livros de [Ralph Waldo Emerson](nome_autor) você conhece?
+      - Me conte sobre os livros de [Charles Dickens](nome_autor)
+      - Quais livros de [Alice Walker](nome_autor) você conhece?
+      - Quero saber mais sobre [Catherine Doyle](nome_autor)
+      - Me mostre livros de [Matt Haig](nome_autor)
+      - Tem livros de [Isabel Allende](nome_autor)?
+      - Me fale sobre os livros de [Brené Brown](nome_autor)
+      - Fale sobre os livros de [Sarah J. Maas](nome_autor)
+      - Quais livros de [Kurt Vonnegut](nome_autor) você conhece?
+      - Me mostre livros de [Shannon Hale](nome_autor)
+      - Quais livros de [Rick Riordan](nome_autor) você tem?
+      - Me fale sobre os livros de [David Baldacci](nome_autor)
+      - Quero saber mais sobre os livros de [Louise Penny](nome_autor)
+      - Me mostre livros de [Ken Kesey](nome_autor)
+      - Quais livros de [Ray Bradbury](nome_autor) você conhece?
+      - Quais livros de [Tana French](nome_autor) são interessantes?
+      - Me fale sobre os livros de [Lisa Jewell](nome_autor)
+      - Tem livros de [Richard Wright](nome_autor)?
+      - Me mostre livros de [Donna Tartt](nome_autor)
+      - Quero livros de [Tana French](nome_autor)
 
-  # Busca o livro pelo assunto
+    # Busca o livro pelo assunto
   - intent: buscar_livro_assunto
     examples: |
       - Quero livros sobre [ficção científica](assunto_livro)
@@ -139,8 +315,83 @@ nlu:
       - Quais livros de [suspense psicológico](assunto_livro) você tem?
       - Me fale sobre livros de [educação](assunto_livro)
       - Você tem livros sobre [tecnologia](assunto_livro)?
+      - Me mostre livros sobre [astrologia](assunto_livro)
+      - Indique livros sobre [astronomia](assunto_livro)
+      - Pode me sugerir livros sobre [economia comportamental](assunto_livro)?
+      - Quero livros sobre [cultura indígena](assunto_livro)
+      - Me fale sobre livros sobre [mineração](assunto_livro)
+      - Pode indicar livros sobre [relacionamentos](assunto_livro)?
+      - Fale sobre livros sobre [mitologia grega](assunto_livro)
+      - Quais livros sobre [teatro](assunto_livro) você tem?
+      - Me conte sobre livros de [ciência política](assunto_livro)
+      - Quais livros de [escrita criativa](assunto_livro) você conhece?
+      - Quero livros sobre [sociologia](assunto_livro)
+      - Me mostre livros de [feminismo](assunto_livro)
+      - Tem livros sobre [bem-estar](assunto_livro)?
+      - Me fale sobre livros de [adaptação ao estresse](assunto_livro)
+      - Quero livros sobre [sobrevivência](assunto_livro)
+      - Me fale sobre livros de [medicina](assunto_livro)
+      - Quais livros de [negócios](assunto_livro) você tem?
+      - Pode indicar livros sobre [música](assunto_livro)?
+      - Quero livros sobre [design](assunto_livro)
+      - Tem livros sobre [culinária](assunto_livro)?
+      - Me fale sobre livros de [astronomia](assunto_livro)
+      - Você tem livros sobre [geografia](assunto_livro)?
+      - Quais livros sobre [futuro](assunto_livro) você tem?
+      - Me indique livros sobre [mitologia romana](assunto_livro)
+      - Quero livros sobre [meditação e autoconhecimento](assunto_livro)
+      - Quais livros de [lutas marciais](assunto_livro) você conhece?
+      - Estou procurando livros sobre [cultura pop](assunto_livro)
+      - Quais livros sobre [tecnologia da informação](assunto_livro) você tem?
+      - Me fale sobre livros de [política internacional](assunto_livro)
+      - Quero livros sobre [autoconhecimento](assunto_livro)
+      - Pode me sugerir livros sobre [ética](assunto_livro)?
+      - Fale sobre livros de [psiquiatria](assunto_livro)
+      - Me mostre livros sobre [história antiga](assunto_livro)
+      - Quais livros sobre [engenharia](assunto_livro) você tem?
+      - Me fale sobre livros de [narrativa interativa](assunto_livro)
+      - Me indique livros sobre [futuro da educação](assunto_livro)
+      - Quero livros sobre [economia mundial](assunto_livro)
+      - Me mostre livros sobre [marketing](assunto_livro)
+      - Quais livros sobre [técnicas de estudo](assunto_livro) você conhece?
+      - Tem livros sobre [medicina alternativa](assunto_livro)?
+      - Me fale sobre livros de [comunicação](assunto_livro)
+      - Quero livros sobre [superação pessoal](assunto_livro)
+      - Me mostre livros de [jornalismo](assunto_livro)
+      - Quais livros sobre [empreendedorismo](assunto_livro) você tem?
+      - Tem livros sobre [cinema](assunto_livro)?
+      - Me fale sobre livros de [mitologia nórdica](assunto_livro)
+      - Quero livros sobre [mindfulness](assunto_livro)
+      - Me mostre livros sobre [história da arte](assunto_livro)
+      - Você tem livros sobre [recursos humanos](assunto_livro)?
+      - Quero livros sobre [estratégias de marketing digital](assunto_livro)
+      - Me fale sobre livros de [culinária vegana](assunto_livro)
+      - Quero livros sobre [autodesenvolvimento](assunto_livro)
+      - Quais livros sobre [neurociência](assunto_livro) você tem?
+      - Me indique livros sobre [fotografia](assunto_livro)
+      - Quais livros de [filmes e séries](assunto_livro) você tem?
+      - Tem livros sobre [evolução](assunto_livro)?
+      - Me mostre livros de [linguística](assunto_livro)
+      - Quero livros sobre [ciência da computação](assunto_livro)
+      - Fale sobre livros sobre [design gráfico](assunto_livro)
+      - Quais livros de [negócios internacionais](assunto_livro) você conhece?
+      - Me fale sobre livros de [história da filosofia](assunto_livro)
+      - Me indique livros sobre [inovação](assunto_livro)
+      - Quero livros sobre [relação de causa e efeito](assunto_livro)
+      - Tem livros sobre [cientificismo](assunto_livro)?
+      - Me fale sobre livros de [finanças pessoais](assunto_livro)
+      - Quais livros sobre [natureza](assunto_livro) você tem?
+      - Me mostre livros sobre [ética e moral](assunto_livro)
+      - Quais livros de [cidadania](assunto_livro) você conhece?
+      - Quero livros sobre [história do cinema](assunto_livro)
+      - Tem livros sobre [pós-modernismo](assunto_livro)?
+      - Me fale sobre livros de [inteligência emocional](assunto_livro)
+      - Quero livros sobre [conhecimento prático](assunto_livro)
+      - Me mostre livros sobre [futuro do trabalho](assunto_livro)
 
-  # Despedida do bot
+
+
+   # Despedida do bot
   - intent: despedida
     examples: |
       - Tchau
@@ -171,3 +422,81 @@ nlu:
       - Te vejo em breve
       - Fui, até mais
       - Despedindo, até logo
+      - Até a próxima conversa
+      - Até logo, me cuida
+      - Tchau, até mais tarde
+      - Nos falamos em breve
+      - Até mais, bom descanso
+      - Foi um prazer, até mais
+      - Falou, não vejo a hora de conversar de novo
+      - Até a próxima, fique bem
+      - Até logo, espero falar contigo em breve
+      - Tchau, aproveite o resto do dia
+      - Até logo, boa sorte por aí
+      - Fique bem, até logo
+      - Te vejo na próxima, tchau
+      - Até logo, cuida-se
+      - Até mais, tenha uma boa noite
+      - Até o próximo encontro
+      - Valeu, até mais
+      - Fique bem, até logo
+      - Nos vemos na próxima
+      - Até mais, cuidando-se sempre
+      - Até logo, boa sorte com tudo
+      - Tchau, fique tranquilo
+      - Até mais tarde, cuide-se
+      - Até logo, espero que se divirta
+      - Nos vemos, até breve
+      - Fui, até logo
+      - Até o próximo bate-papo
+      - Até mais, te desejo o melhor
+      - Tchau, vai com Deus
+      - Até mais, se cuida bem
+      - Até logo, aproveite o dia
+      - Foi ótimo te ajudar, até mais
+      - Até breve, até o próximo papo
+      - Até logo, cuide de você
+      - Falou, até o próximo dia
+      - Te vejo na próxima, tenha um bom descanso
+      - Até logo, boa sorte nas suas aventuras
+      - Nos vemos, até logo
+      - Tchau, tudo de bom
+      - Até logo, divirta-se
+      - Até breve, até a próxima conversa
+      - Foi bom te ajudar, até logo
+      - Até logo, nos falamos depois
+      - Tchau, até a próxima oportunidade
+      - Fique bem, até logo
+      - Até logo, cuide-se sempre
+      - Até breve, boa sorte!
+      - Tchau, até logo, me avise quando precisar
+      - Nos vemos, até a próxima conversa
+      - Tchau, nos encontramos em breve
+      - Até logo, que a sorte te acompanhe
+      - Até mais, até o próximo encontro
+      - Tchau, até a próxima interação
+      - Até logo, espero ter te ajudado
+      - Até logo, tenha uma boa jornada
+      - Nos vemos, até breve
+      - Fui, até mais, cuida-se
+      - Até logo, até a próxima!
+      - Tchau, bom descanso
+      - Tchau, até a próxima vez
+      - Até logo, boa sorte na sua jornada
+      - Nos vemos em breve, tchau
+      - Tchau, até o nosso próximo papo
+      - Até logo, até a próxima conversa
+      - Tchau, cuide-se bem
+      - Até mais, nos vemos em breve
+      - Fui, até logo
+      - Até logo, tenha um bom dia
+      - Tchau, espero te ajudar de novo em breve
+      - Nos vemos na próxima, até logo
+      - Tchau, até logo, foi bom conversar
+      - Até breve, até logo
+      - Tchau, até a próxima
+      - Tchau, até a próxima vez que precisarmos conversar
+      - Até logo, até mais tarde
+      - Até breve, até a próxima conversa
+      - Tchau, até o próximo papo
+      - Até logo, espero falar com você logo
